@@ -1,4 +1,3 @@
-// àts-no-check
 import * as React from "react";
 import { clsx } from "clsx";
 import { Slot } from "@radix-ui/react-slot";
@@ -134,6 +133,8 @@ export const createTwc = <TCompose extends AbstractCompose = typeof clsx>(
         const isClassFn = typeof stringsOrFn === "function";
         const tplClassName =
           !isClassFn && String.raw({ raw: stringsOrFn }, ...values);
+
+        /* eslint-disable react/display-name */
         return React.forwardRef((p: any, ref) => {
           const { className: classNameProp, asChild, ...rest } = p;
           const rp =
@@ -160,6 +161,7 @@ export const createTwc = <TCompose extends AbstractCompose = typeof clsx>(
           );
         });
       };
+      /* eslint-enable react/display-name */
 
       template.transientProps = (
         fnOrArray: string[] | ((prop: string) => boolean)

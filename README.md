@@ -1,4 +1,4 @@
-Add this to VS Code
+Add this to your VS Code settings:
 
 ```js
 {
