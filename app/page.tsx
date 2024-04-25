@@ -230,7 +230,7 @@ function WithTwc() {
           </div>
           <DialogTwcFooter className="sm:justify-start">
             <DialogTwcClose asChild>
-              <ButtonTwc type="button" $variant="secondary">
+              <ButtonTwc type="button" variant="secondary">
                 Close
               </ButtonTwc>
             </DialogTwcClose>
@@ -239,7 +239,7 @@ function WithTwc() {
         </DialogTwcContent>
       </DialogTwc>
 
-      <ButtonTwc $variant="outline">Button Twc</ButtonTwc>
+      <ButtonTwc variant="outline">Button Twc</ButtonTwc>
 
       <AvatarTwc className="size-10">
         <AvatarTwcImage src="https://github.com/shadcn.png" alt="@shadcn" />
