@@ -1,4 +1,5 @@
-import { twc, TwcComponentProps } from "@/lib/utils/twc";
+import { twc } from "@/lib/utils/twc";
+import { TwcComponentProps } from "@/lib/utils/twc-types";
 import { cva, VariantProps } from "class-variance-authority";
 
 const buttonVariants = cva(
